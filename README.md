@@ -25,9 +25,10 @@ dotnet test
 
 
 
-TODO write up instructions on this repo
-https://stackoverflow.com/questions/45482507/how-do-i-install-nunit-3-console-on-windows-and-run-tests
-go update https://community.sonarsource.com/t/coverage-test-data-generate-reports-for-c-vb-net/9871
+### TODO
+write up instructions on this repo
+* https://stackoverflow.com/questions/45482507/how-do-i-install-nunit-3-console-on-windows-and-run-tests
+* go update https://community.sonarsource.com/t/coverage-test-data-generate-reports-for-c-vb-net/9871
 
 
 ```text
