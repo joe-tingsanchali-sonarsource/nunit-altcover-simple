@@ -39,3 +39,13 @@ write up instructions on this repo
 > dotnet test /p:AltCover=true
 > END
 ```
+
+```text
+# looks something like this
+$ dotnet sonarscanner begin /k:"nunit-altcover" /d:"sonar.cs.opencover.reportsPaths=coverage.xml" /d:"sonar.login=<INSERT-USER-TOKEN" /d:"sonar.host.url=<INSERT-SQ-HOSTNAME>"
+$ dotnet build ./unit-testing-using-nunit.sln
+# can only run nunit3-console on windows...
+$ nunit3-console.exe --result=NUnitResults.xml "PrimeService.Tests\bin\Debug\netcoreapp3.1\PrimeService.Tests.dll"
+$ dotnet test /p:AltCover=true
+$ dotnet sonarscanner end /d:"sonar.login=<INSERT-USER-TOKEN>"
+```
